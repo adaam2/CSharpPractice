@@ -1,0 +1,7 @@
+﻿namespace CSharpPractice
+{
+    class DynamicTyping
+    {
+        
+    }
+}
