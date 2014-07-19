@@ -8,5 +8,16 @@ namespace CSharpPractice
 {
     class Structs
     {
+        struct Doohickey
+        {
+            public int Position;
+            public bool Exists;
+            public double LastValue;
+        };
+        public Structs()
+        {
+            Doohickey d;
+            d.LastValue = 1;
+        }
     }
 }

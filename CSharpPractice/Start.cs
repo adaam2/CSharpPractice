@@ -12,7 +12,13 @@ namespace CSharpPractice
 
             //ObjectInheritance obj = new ObjectInheritance();
 
-            LINQForObjects linqPractice = new LINQForObjects();
+            //LINQForObjects linqPractice = new LINQForObjects();
+
+            //IO inputOutputTest = new IO();
+
+            Enums e = new Enums();
+
+            ConsoleInternal consoleMod = new ConsoleInternal();
 
             Console.ReadKey(); // necessary to keep console window open long enough to see output!!
         }
