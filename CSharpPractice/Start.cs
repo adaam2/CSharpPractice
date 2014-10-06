@@ -20,6 +20,7 @@ namespace CSharpPractice
 
             ConsoleInternal consoleMod = new ConsoleInternal();
 
+            LINQ linqPractice = new LINQ();
             Console.ReadKey(); // necessary to keep console window open long enough to see output!!
         }
     }

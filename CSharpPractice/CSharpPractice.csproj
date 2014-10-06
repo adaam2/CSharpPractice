@@ -33,9 +33,18 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,14 +57,19 @@
     <Compile Include="BasicArrays.cs" />
     <Compile Include="CollectionsGeneric.cs" />
     <Compile Include="ConsoleInternal.cs" />
+    <Compile Include="DatabaseContext.cs" />
     <Compile Include="DynamicTyping.cs" />
     <Compile Include="Encryption.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="EntityTweetLink.cs" />
+    <Compile Include="EntityType.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="genericClasses\Place.cs" />
     <Compile Include="helpers\debugFunctions.cs" />
     <Compile Include="IO.cs" />
     <Compile Include="Lambdas.cs" />
+    <Compile Include="LINQ.cs" />
     <Compile Include="LINQForObjects.cs" />
     <Compile Include="MethodOverridingOverloading.cs" />
     <Compile Include="NullableTypes.cs" />
@@ -67,6 +81,7 @@
     <Compile Include="Delegates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structs.cs" />
+    <Compile Include="Tweet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="textFiles\sample1.txt">
@@ -74,6 +89,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="textFiles\FL_insurance_sample.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
