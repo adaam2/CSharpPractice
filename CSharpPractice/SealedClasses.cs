@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace CSharpPractice
 {
-    class SealedClasses
+    class SealedTester
     {
+        public SealedTester()
+        {
+            Sealed i = new Sealed();
+        }
     }
+    sealed class Sealed
+    {
+        public Sealed()
+        {
+            // no implementation
+        }
+    }
+    //class Child : Sealed
+    //{
+    //    // cant inherit from Sealed so commented out otherwise there'll be a build error
+    //}
 }

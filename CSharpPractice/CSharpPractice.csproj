@@ -67,6 +67,8 @@
     <Compile Include="Exceptions.cs" />
     <Compile Include="genericClasses\Place.cs" />
     <Compile Include="helpers\debugFunctions.cs" />
+    <Compile Include="interfaces\IMessage.cs" />
+    <Compile Include="interfaces\testClasses\InterfaceTester.cs" />
     <Compile Include="IO.cs" />
     <Compile Include="Lambdas.cs" />
     <Compile Include="LINQ.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Delegates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structs.cs" />
+    <Compile Include="Tasks.cs" />
     <Compile Include="Tweet.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +98,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

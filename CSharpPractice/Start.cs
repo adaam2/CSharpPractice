@@ -1,26 +1,23 @@
 ﻿using System;
+using CSharpPractice.interfaces;
+using CSharpPractice.interfaces.testClasses;
 
 namespace CSharpPractice
 {
     public class Start
     {
         public static void Main(string[] args)
-        {
-            //BasicArrays basic = new BasicArrays();
+        {       
+            //InterfaceTester t = new InterfaceTester(new BasicMessager());
+            //t.SendMessage("Hello this is being sent using an interface");
 
-            //Delegates delegatePractice = new Delegates();
 
-            //ObjectInheritance obj = new ObjectInheritance();
+            //ExceptionTester t2 = new ExceptionTester();
 
-            //LINQForObjects linqPractice = new LINQForObjects();
+            Tasks t3 = new Tasks();
 
-            //IO inputOutputTest = new IO();
+            Console.WriteLine("--END OF FILE--");
 
-            Enums e = new Enums();
-
-            ConsoleInternal consoleMod = new ConsoleInternal();
-
-            LINQ linqPractice = new LINQ();
             Console.ReadKey(); // necessary to keep console window open long enough to see output!!
         }
     }
