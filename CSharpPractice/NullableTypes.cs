@@ -8,5 +8,12 @@ namespace CSharpPractice
 {
     class NullableTypes
     {
+        public NullableTypes()
+        {
+            //int? theNullableInt = if(int.TryParse("12", out theNullableInt))
+            int? nullable = null;
+
+            
+        }
     }
 }

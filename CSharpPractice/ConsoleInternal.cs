@@ -11,6 +11,8 @@ namespace CSharpPractice
         public ConsoleInternal()
         {
             Console.Title = "Test title";
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.BackgroundColor = ConsoleColor.DarkRed;
         }
     }
 }

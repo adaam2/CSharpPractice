@@ -16,6 +16,7 @@ namespace CSharpPractice
         {
             // do stuff
         }
+       
         //private static void PrivateStaticMethod {
         //    // This static method can be used by all instances of this class
         //    // i.e. AccessModifiers.PrivateStaticMethod();

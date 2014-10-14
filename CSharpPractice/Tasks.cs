@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CSharpPractice
@@ -11,7 +8,7 @@ namespace CSharpPractice
         public Tasks()
         {
             // Assume this is a user-entered string. 
-            string path = @"C:\";
+            string path = @"C:\Users\adambull\Documents";
 
             // Use this line to throw UnauthorizedAccessException, which we handle.
             Task<string[]> task1 = Task<string[]>.Factory.StartNew(() => GetAllFiles(path));
@@ -20,6 +17,7 @@ namespace CSharpPractice
             //  Task task1 = Task.Factory.StartNew(() => { throw new IndexOutOfRangeException(); } ); 
             try
             {
+                
                 task1.Wait();
             }
             catch (AggregateException ae)
@@ -37,13 +35,20 @@ namespace CSharpPractice
                 });
 
             }
+            finally
+            {
+                foreach (var item in task1.Result)
+                {
+                    //Console.WriteLine(item + "hey");
+                }
+            }
 
             Console.WriteLine("task1 has completed.");
         }
         string[] GetAllFiles(string str)
         {
             // Should throw an AccessDenied exception on Vista. 
-            return System.IO.Directory.GetFiles(str, "*.txt", System.IO.SearchOption.AllDirectories);
+            return System.IO.Directory.GetFiles(str, "*.txt", System.IO.SearchOption.TopDirectoryOnly);
         }
     }
 }

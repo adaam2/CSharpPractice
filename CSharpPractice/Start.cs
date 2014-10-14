@@ -14,7 +14,9 @@ namespace CSharpPractice
 
             //ExceptionTester t2 = new ExceptionTester();
 
-            Tasks t3 = new Tasks();
+            //Tasks t3 = new Tasks();
+
+            SerializationDeserialization s = new SerializationDeserialization();
 
             Console.WriteLine("--END OF FILE--");
 
